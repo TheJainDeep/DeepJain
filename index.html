@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Jain - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header / Hero Section -->
+     
+    <header>
+        <div class="hero">
+            <img src="images/profile.jpg" alt="Deep Jain" class="profile-pic">
+            <h1>Deep Jain</h1>
+            <p>Product | Innovation | Sustainability</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="images/profile.jpg" alt="Deep Jain" class="about-pic">
+                <div class="about-text">
+        
+                    <!-- Navigation between sections -->
+                    <div id="intro" style="display: block;">
+                        <p>Hi, I’m <strong>Deep Jain</strong> – a data-driven problem solver and aspiring Product Manager passionate about creating impactful, sustainable products. With a foundation in <strong>Product Analytics</strong> and <strong>Chemical Engineering</strong>, I thrive on designing solutions that merge innovation, efficiency, and user needs.</p>
+                        <p></p>
+                        <div style="text-align: center;">
+                            <button onclick="showHighlights()" class="next-btn">Next →</button>
+                        </div>
+                    </div>
+        
+                    <div id="highlights" style="display: none; margin-top: 20px;">
+                        <h3>Key Highlights:</h3>
+                        <ul>
+                            <li><strong>AIR 200</strong> in EE GATE 2024.</li>
+                            <li>Recipient of the <strong>Monali Dey Award</strong> at BITS Pilani.</li>
+                            <li>Co-Founder of <strong>GreenSteam</strong>, mentored by The Sustainability Mafia.</li>
+                            <li>Former President of IIChE BITS Pilani, leading initiatives that influenced 100+ peers.</li>
+                        </ul>
+                        <p></p>
+                        <div style="text-align: center;">
+                            <button onclick="showIntro()" class="prev-btn">← Back to Intro</button>
+                            <button onclick="showVision()" class="next-btn">Next →</button>
+                        </div>
+                    </div>
+        
+                    <div id="vision" style="display: none; margin-top: 20px;">
+                        <h3>Vision Statement:</h3>
+                        <p>I aspire to bridge the gap between data, sustainability, and product innovation. My goal is to lead impactful products that solve real-world problems and create meaningful value for businesses and users alike.</p>
+                        <p></p>
+                        <div style="text-align: center;">
+                            <button onclick="showHighlights()" class="prev-btn">← Back to Highlights</button>
+                            <button onclick="showIntro()" class="prev-btn">Back to Intro →</button>
+                        </div>
+                    </div>
+                    <p></p>
+                    <div style="text-align: center;">        
+                    <!-- Download Resume Button -->
+                    <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+                    <p></p>
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/thejaindeep" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/TheJainDeep" target="_blank">GitHub</a>
+                        <a href="https://twitter.com/TheJainDeep" target="_blank">X</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-container">
+                <!-- InMobi Experience -->
+                <div class="experience-item">
+                    <h3>Product Analyst Intern at InMobi</h3>
+                    <span>Jul 2023 - Dec 2023</span>
+                    <p>
+                        - Optimized workflows and reporting by automating dashboards and pipelines, saving over <strong>750+ hours annually</strong>.<br>
+                        - Improved ad performance and profitability by <strong>$3,000/month</strong> through advanced analytics and data-driven solutions.<br>
+                        - Created scalable tools for D7 ROAS tracking, user behavior analyses, and performance evaluations, enabling leadership to make informed decisions.
+                    </p>
+                </div>
+                
+                <!-- GAIL Experience -->
+                <div class="experience-item">
+                    <h3>Operations & Management Intern at GAIL India Ltd.</h3>
+                    <span>Jun 2022 - Jul 2022</span>
+                    <p>
+                        - Designed a <strong>MATLAB-based model</strong> for calorific value estimation with less than <strong>1% error</strong>, reducing reliance on expensive gas chromatographs.<br>
+                        - Conducted a comprehensive study of the <strong>CNG business and pipeline operations</strong>, identifying the economic and environmental advantages of CNG.<br>
+                        - Explored alternative energy solutions and recommended strategies to improve small-scale gas measurement and pipeline performance.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+       
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <!-- Technical Skills -->
+                <hr>
+                <div class="skill">
+                    <h3>Power BI</h3>
+                    <div class="progress-bar" title="90%">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>SQL</h3>
+                    <div class="progress-bar" title="85%">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <div class="progress-bar" title="80%">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Azure Databricks</h3>
+                    <div class="progress-bar" title="75%">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>MATLAB</h3>
+                    <div class="progress-bar" title="80%">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <hr>
+                <div class="skill">
+                    <h3>Leadership</h3>
+                    <div class="progress-bar" title="90%">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Problem-Solving</h3>
+                    <div class="progress-bar" title="85%">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Effective Communication</h3>
+                    <div class="progress-bar" title="80%">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+           
+
+        <!-- Projects/Portfolio Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <!-- Newton School Engagement Optimization -->
+                <div class="project-item">
+                    <img src="images/project-newton.jpg" alt="Engagement Optimization">
+                    <h3>Engagement Optimization for Newton School</h3>
+                    <p>Designed a Career Roadmap integration to enhance engagement and completion rates for Data Science courses by linking progress to career goals and skills.</p>
+                    <a href="https://docs.google.com/presentation/d/1WtecJSsnqvRJPnCv039kWBVrGB_iXVnJ/edit?usp=sharing&ouid=118098274167491974980&rtpof=true&sd=true" target="_blank" class="btn">View on Drive</a>
+                </div>
+        
+                <!-- FestEZ – Event Management App -->
+                <div class="project-item">
+                    <img src="images/festez.jpg" alt="FestEZ">
+                    <h3>FestEZ – Event Management App</h3>
+                    <p>Prototyped an app with blockchain-based ticketing, AR venue navigation, and location-based friend finder to simplify event participation and engagement.</p>
+                    <a href="https://drive.google.com/file/d/1Wdh8pPx78cLkpxrK5mPMLP3DFujQLkRk/view?usp=drive_link" target="_blank" class="btn">View on Drive</a>
+                </div>
+        
+                <!-- SWIFT Delivery Optimization Analysis Project -->
+<div class="project-item">
+    <img src="images/project-swift.jpg" alt="GO-SWIFT Analysis">
+    <h3>SWIFT Delivery Optimization Analysis</h3>
+    <p>The analysis of Pickup Performance, Delivery TAT, and RTO metrics was used to optimize delivery provider performance, reduce high TAT and RTO risks, and reduce costs.</p>
+    <a href="https://drive.google.com/drive/folders/18s8EJe1Oxsg0ODHx9GY8cR_E7gJbeVQY?usp=drive_link" target="_blank" class="btn">View on Drive</a>
+</div>
+
+        
+                <!-- DSP Dashboard Consolidation Project -->
+<div class="project-item">
+    <h3>Automated End-to-End DSP Dashboard</h3>
+    <p>Unified multiple DSP dashboards into a comprehensive, real-time solution using Microsoft Azure and Power BI. Automated data aggregation, reporting, and visualization to optimize campaigns and improve decision-making efficiency.</p>
+</div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonials-container">
+                
+                <div class="testimonial-item">
+                    <p>"I had the pleasure of working with Deep as their product analyst intern for the past six months. I was immediately impressed by their intelligence, curiosity, and eagerness to learn. He quickly grasped complex data analysis tools and used them to generate insightful reports that influenced key product decisions.</p>
+
+                    <p>Beyond technical skills, Deep is a natural collaborator with excellent communication skills. He fostered productive discussions within the team and effectively presented findings to stakeholders. I am confident that Deep has the potential to become a successful product analyst in any organization. I highly recommend him and encourage anyone seeking a talented and motivated individual to connect with him."</p>
+                    <h4>- Suvigya Nijhawan, InMobi</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"It was a pleasure to work with Deep; he thoroughly understood the product team's requirements and delivered the analytics dashboards with a quick turnaround time. Found him fully dedicated and sincere in his work. Wishing him all the best for upcoming adventures :)."</p>
+                    <h4>- Rachana Bagade, InMobi</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Deep worked at InMobi as a Product Analytics Intern. He and I worked closely on multiple projects where he created reusable analytical dashboards for us. Throughout his tenure at InMobi, it never felt like Deep was an intern. He was mature, understanding, inquisitive, and highly comprehensive in the work that he did. I enjoyed brainstorming with Deep and debated on the right measure, KPI to use and how to calculate those. While Deep was quick to learn hard skills, what I really appreciated was how quickly he grasped the concepts of the AdTech industry and the internal organization jargons. All in all, I really enjoyed working with Deep and hope that we get a chance to work again in the future."</p>
+                    <h4>- Anant Bhatia, InMobi</h4>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>Email: deepjain.work@gmail.com</p>
+                <p>Phone: +91 9043196170</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Deep Jain. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for External Links (if needed) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+    
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
