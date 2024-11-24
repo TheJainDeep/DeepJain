@@ -296,6 +296,31 @@
   };
 </script>
     <script>
+  const form = document.getElementById('contactForm');
+  form.onsubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const formObject = Object.fromEntries(formData);
+    
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: JSON.stringify(formObject),
+        headers: { 'Content-Type': 'application/json' }
+      });
+      const result = await response.json();
+      if (result.result === "success") {
+        alert("Message sent successfully!");
+      } else {
+        alert("Error: " + result.error);
+      }
+    } catch (error) {
+      alert("Network Error: " + error.message);
+    }
+  };
+</script>
+
+    <script>
         document.querySelectorAll('.navbar a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
