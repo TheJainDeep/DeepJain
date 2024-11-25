@@ -14,6 +14,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 behavior: 'smooth'
             });
         });
+
+    document.querySelectorAll('.read-more-btn').forEach((button) => {
+    button.addEventListener('click', () => {
+        const content = button.previousElementSibling;
+        if (content.style.maxHeight) {
+            content.style.maxHeight = '';
+            content.style.overflow = 'hidden';
+            content.style.display = '-webkit-box';
+            button.textContent = 'Read More';
+        } else {
+            content.style.maxHeight = 'none';
+            content.style.overflow = 'visible';
+            content.style.display = 'block';
+            button.textContent = 'Show Less';
+        }
+    });
+});
+
     });
 
     
