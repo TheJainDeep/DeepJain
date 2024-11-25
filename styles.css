@@ -484,6 +484,64 @@ hr {
 #contact-form .btn:hover {
     background-color: #5d4037;
 }
+/* Form Container Styles */
+.styled-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #00aaff;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Form Labels */
+.styled-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Form Inputs and Textarea */
+.styled-form input,
+.styled-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.styled-form textarea {
+  resize: none;
+}
+
+/* Form Button */
+.styled-form button {
+  padding: 10px 15px;
+  background-color: #00aaff;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.styled-form button:hover {
+  background-color: #008ecc;
+}
+
+/* Form Title Styling */
+.styled-form span {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0077cc;
+}
 
 .contact-info {
     text-align: center;
