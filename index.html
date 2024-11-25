@@ -246,22 +246,19 @@
         <section id="contact">
             <h2>Contact Me</h2>
             <div style="text-align: center;">
-            <form action="https://formspree.io/f/mpwzjjrn" method="POST" class="contact-form" >
-  <label>
-    <span>Your name:</span>
-    <input type="text" name="name" required>
-  </label>
-  <label>
-    <span>Your email:</span>
-    <input type="email" name="email" required>
-  </label>
-  <label>
-    <span>Your message:</span>
-    <textarea name="message" rows="5" required></textarea>
-  </label>
-  <button type="submit">Send</button>
-</form>
-            </div>
+            <form action="https://formspree.io/f/mpwzjjrn" method="POST" >
+                <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
             <div class="contact-info">
                 <p>Email: deepjain.work@gmail.com</p>
                 <p>Phone: +91 9043196170</p>
