@@ -438,6 +438,24 @@ hr {
 .testimonial-item:hover {
     transform: translateX(10px);
 }
+.testimonial-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 11; /* Limit to 11 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: calc(11 * 1.2em); /* Adjust line height as per font-size */
+}
+
+.read-more-btn {
+    background-color: #007BFF; /* Style the button as desired */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
 
 .testimonial-item p {
     font-style: italic;
