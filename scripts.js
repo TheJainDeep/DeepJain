@@ -74,15 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
             openModal(title, description, image);
         });
     });
-
-    // Handle Contact Form Submission
-    const contactForm = document.getElementById('contact-form');
-
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
-    });
 });
 
 // Function to show Key Highlights
