@@ -245,41 +245,21 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <form id="contact-form">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send</button>
+            <form action="https://formspree.io/f/mpwzjjrn" method="POST" >
+  <label>
+    Your name:
+    <input type="name" name="name">
+  </label>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <button type="submit">Send</button>
 </form>
-
-<script>
-    const form = document.getElementById('contact-form');
-    form.onsubmit = async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-        const formObject = Object.fromEntries(formData);
-
-        try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbw2TQ0O0O2HMLaGKVa_-RvITitDzZ1jTR0sLnql2Un7Swzq1uM632x2sv5L2ntMX2PXRg/exec", {
-                method: 'POST',
-                body: JSON.stringify(formObject),
-                headers: { 'Content-Type': 'application/json' }
-            });
-
-            const result = await response.json();
-            if (result.result === "success") {
-                alert("Message sent successfully!");
-            } else {
-                alert("Error: " + result.error);
-            }
-        } catch (error) {
-            alert("Network Error: " + error.message);
-        }
-    };
-</script>
-
-
             <div class="contact-info">
                 <p>Email: deepjain.work@gmail.com</p>
                 <p>Phone: +91 9043196170</p>
