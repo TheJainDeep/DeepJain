@@ -350,6 +350,45 @@
             });
         });
     </script>
+        <!-- Lazy Loading & Smooth Scroll Scripts -->
+    <script>
+        // Lazy loading for images
+        document.addEventListener("DOMContentLoaded", () => {
+            const lazyImages = document.querySelectorAll('.lazy');
+            lazyImages.forEach(img => {
+                img.src = img.dataset.src || img.src;
+            });
+        });
+
+        // Smooth scroll functionality
+        document.querySelectorAll('.smooth-scroll').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fetch dynamic content for projects
+        async function fetchProjects() {
+            const response = await fetch('projects.json'); // Replace with your JSON URL
+            const projects = await response.json();
+            const container = document.getElementById('projects-container');
+            projects.forEach(project => {
+                const projectCard = `
+                    <div class="project-card">
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <a href="${project.link}" target="_blank">Learn More</a>
+                    </div>`;
+                container.innerHTML += projectCard;
+            });
+        }
+        fetchProjects();
+    </script>
+</body>
+</html>
     
     <script src="scripts.js"></script>
 </body>
