@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Engagement Optimization for Newton School",
+        "description": "Designed a Career Roadmap integration to enhance engagement and completion rates for Data Science courses by linking progress to career goals and skills.",
+        "image": "project-newton.jpg",
+        "alt": "Engagement Optimization",
+        "link": "https://docs.google.com/presentation/d/1WtecJSsnqvRJPnCv039kWBVrGB_iXVnJ/edit?usp=sharing&ouid=118098274167491974980&rtpof=true&sd=true"
+    },
+    {
+        "title": "FestEZ – Event Management App",
+        "description": "Prototyped an app with blockchain-based ticketing, AR venue navigation, and location-based friend finder to simplify event participation and engagement.",
+        "image": "festez.jpg",
+        "alt": "FestEZ",
+        "link": "https://drive.google.com/file/d/1Wdh8pPx78cLkpxrK5mPMLP3DFujQLkRk/view?usp=drive_link"
+    },
+    {
+        "title": "Festive Load Planning - Swift",
+        "description": "The 7x sales surge during the festive season causes courier network performance to deteriorate. The analysis on several metrics was used to optimize delivery vendor performance and reduce costs.",
+        "image": "swift.jpg",
+        "alt": "Delivery Optimization Analysis",
+        "link": "https://drive.google.com/drive/folders/18s8EJe1Oxsg0ODHx9GY8cR_E7gJbeVQY?usp=drive_link"
+    },
+    {
+        "title": "My Portfolio",
+        "description": "Check out more other Product, Analytics and Supply Chain projects from my Portfolio!",
+        "image": "portfolio.jpg",
+        "alt": "My Portfolio",
+        "link": "https://drive.google.com/drive/folders/1WbjuGpEUHxBxVxLjJPFMQ46cuL4u1lW9?usp=sharing"
+    },
+    {
+        "title": "Automated End-to-End DSP Dashboard",
+        "description": "Consolidated 10+ dashboards into a single exhaustive dashboard with 5 distinct pages consisting of 20+ key metrics & 15+ dimensions. Stitched big-data from 6+ sources like Azure blob storage and automated the entire pipeline on Power BI saving 10+ human hours / week.",
+        "image": null,
+        "alt": null,
+        "link": null
+    }
+]
